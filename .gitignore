@@ -1,0 +1,7 @@
+# Editors - VsCode
+/editors/vs-code/User/globalStorage
+/editors/vs-code/User/workspaceStorage
+/editors/vs-code/User/History
+
+# Private Stuff
+/**/**/private-*
