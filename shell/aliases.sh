@@ -17,9 +17,10 @@ alias gps="git push"
 
 # Docker
 alias dc="~/.dotfiles/scripts/docker/docker_connect"
-
-# Deploy
+alias dlogs="~/.dotfiles/scripts/docker/docker_logs"
+alias dwatch="~/.dotfiles/scripts/docker/watch"
 alias localdp="~/.dotfiles/scripts/deploy/local_deploy"
+alias localrm="~/.dotfiles/scripts/deploy/local_rm"
 
 # Others
 alias o.="open ."

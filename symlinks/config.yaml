@@ -13,5 +13,7 @@
     ~/.bashrc: shell/bash/.bashrc
     # ~/.gitattributes: git/.gitattributes
     ~/.gitconfig: git/.gitconfig
+    ~/bin: bin/oh-my-posh
+    ~/.config/Code/User: editors/vs-code/User
     # ~/.gitignore_global: git/.gitignore_global
     # ~/.profile: shell/bash/.profile

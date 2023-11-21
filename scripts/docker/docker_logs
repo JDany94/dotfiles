@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+if docker ps >/dev/null 2>&1; then
+  service=$(docker service ls | awk '{if (NR!=1) print $2}' | fzf)
+
+  if [[ -n $service ]]; then
+    docker service logs $service
+  else
+    echo "You haven't selected any service!"
+  fi
+else
+  echo "Docker daemon is not running!"
+fi
