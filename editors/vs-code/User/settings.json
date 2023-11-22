@@ -25,6 +25,5 @@
     "terminal.integrated.cursorStyleInactive": "none",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.smoothScrolling": true,
-    "window.zoomLevel": -1
+    "terminal.integrated.smoothScrolling": true
 }
