@@ -17,6 +17,7 @@ alias dlogs="~/.dotfiles/scripts/docker/docker_logs" # Show the logs of the sele
 alias dwatch="~/.dotfiles/scripts/docker/docker_watch" # watch docker service ls
 alias localdp="~/.dotfiles/scripts/docker/local_deploy" # Deploy the local environment for Smart
 alias localrm="~/.dotfiles/scripts/docker/local_rm" # Remove all services from the local environment for Smart
+alias contapache="~/.dotfiles/scripts/docker/content_apache" # Run apache in docker for smartContent
 alias rmservice="~/.dotfiles/scripts/docker/service_rm" # Remove the selected service
 
 # Others
