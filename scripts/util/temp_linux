@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+awk '{print "Temperatura", NR, ":", $1/1000 "°C"}' /sys/class/hwmon/hwmon*/temp*_input

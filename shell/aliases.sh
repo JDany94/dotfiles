@@ -21,6 +21,7 @@ alias localrm="~/.dotfiles/scripts/docker/local_rm" # Remove all services from t
 alias rmservice="~/.dotfiles/scripts/docker/service_rm" # Remove the selected service
 
 # Others
+alias tmp="~/.dotfiles/scripts/util/temp_linux" # Show the computer's sensor temperatures
 alias o.="open ." # Opens a file explorer in the current location
 alias cl="clear" # Clear the screen
 alias ..="cd .." # Go back one directory
