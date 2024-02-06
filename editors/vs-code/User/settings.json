@@ -26,5 +26,7 @@
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.smoothScrolling": true,
-    "window.zoomLevel": -1
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

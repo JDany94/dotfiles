@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+
+cd ~/Documentos/repos/smart-be &&
+sed -i 's/ENV MYSQL_USER_PASSWORD=root/ENV MYSQL_USER_PASSWORD=netex/' MigrationsDockerfile &&
+sed -i 's/ENV MYSQL_HOST=127.0.0.01/ENV MYSQL_HOST=172.17.0.1/' MigrationsDockerfile &&
+sed -i 's/ENV MONGODB_URI mongodb:\/\/localhost:27017\/classroom/ENV MONGODB_URI mongodb:\/\/172.17.0.1:27017\/classroom/' MigrationsDockerfile &&
+docker rmi -f be-migrations &&
+yarn build &&
+docker build -t be-migrations -f MigrationsDockerfile . &&
+docker run be-migrations &&
+sed -i 's/ENV MYSQL_USER_PASSWORD=netex/ENV MYSQL_USER_PASSWORD=root/' MigrationsDockerfile &&
+sed -i 's/ENV MYSQL_HOST=172.17.0.1/ENV MYSQL_HOST=127.0.0.01/' MigrationsDockerfile &&
+sed -i 's/ENV MONGODB_URI mongodb:\/\/172.17.0.1:27017\/classroom/ENV MONGODB_URI mongodb:\/\/localhost:27017\/classroom/' MigrationsDockerfile &&
+docker rmi -f be-migrations
+

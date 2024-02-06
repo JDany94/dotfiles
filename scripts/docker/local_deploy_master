@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 
 cd ~/Documentos/repos/smart-stack-definitions && 
-git checkout master && 
-git pull && 
+git checkout local_master && 
 ENV=local make deploy-localinstallation && 
 docker start smartContent-apache
