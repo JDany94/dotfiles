@@ -45,11 +45,11 @@ if [[ -n $section_name ]]; then
       # Check if the selected section is "GIT"
       echo "The 'Git' commands need additional arguments. Run them outside the menu"
     elif [[ -n $command_to_run ]]; then
-      if [[ $selected_alias != ".." ]]; then
-        # If there is a command associated with the selected alias and it's not "..", execute it
+      if [[ $selected_alias != ".." && $selected_alias != "translate" ]]; then
+        # If there is a command associated with the selected alias and it's not ".." or "translate", execute it
         eval "$command_to_run"
       else
-        echo "The command '$selected_alias' cannot be executed from this script."
+        echo "The command '$selected_alias' cannot be executed from this menu."
       fi
     else
       echo "You haven't selected any alias"

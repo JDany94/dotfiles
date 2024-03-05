@@ -1,0 +1,11 @@
+#!/bin/bash
+
+translate_and_copy() {
+    text="$1"
+    translation=$(curl -s "https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=en&dt=t&q=$(echo $text | sed 's/ /%20/g')")
+    translation=$(echo $translation | cut -d'"' -f2)
+    echo $translation
+    echo -n $translation | xclip -selection clipboard
+}
+
+translate_and_copy "$1"
