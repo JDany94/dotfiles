@@ -5,3 +5,6 @@
 
 # Private Stuff
 /**/**/private-*
+
+# Environment Variables
+.env

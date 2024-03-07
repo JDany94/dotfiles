@@ -1,3 +1,4 @@
 #!/usr/bin/bash
 
-cd ~/Documentos/repos/smart-stack-definitions && ENV=local make deploy-smarted
+cd ~/Documentos/repos/smart-stack-definitions && 
+ENV=local make deploy-smarted

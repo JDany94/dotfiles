@@ -4,4 +4,5 @@ cd ~/Documentos/repos/smart-stack-definitions &&
 git checkout master && 
 git pull && 
 ENV=local make deploy-localinstallation && 
-docker start smartContent-apache
+docker start smartContent-apache &&
+docker start moodle
