@@ -3,11 +3,14 @@
 URL="http://localhost:3005/api/chat"
 MODEL="llama2:latest"
 SYSTEM="Follow these five instructions below in all your responses: Use Spanish language only; Do not use English except in programming languages if any; Translate any other language to the Spanish language whenever possible; Summarize the answers as much as possible, omitting unnecessary data; Do not say hello or say goodbye, just answer the question as briefly and precisely as you can."
-TEMPERATURE=0.5
+TEMPERATURE=0.3
 
 chat() {
     prompt="$1"
+    start=$(date +%s)
     answer=$(curl -s -X POST -H "Content-Type: application/json" -d '{"model": "'"$MODEL"'", "system": "'"$SYSTEM"'", "prompt": "'"$prompt"'", "options": {"temperature": '"$TEMPERATURE"'}}' $URL)
+    end=$(date +%s)
+    echo "$((end-start))s"
     echo "$answer"
 }
 
