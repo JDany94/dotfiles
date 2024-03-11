@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+docker start chatollama2_ollama_1 &&
+docker start chatollama2_chatgpt_1

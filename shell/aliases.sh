@@ -22,9 +22,11 @@ alias localdpsmarted="~/.dotfiles/scripts/docker/local_deploy_smarted" # Deploy 
 alias localrm="~/.dotfiles/scripts/docker/local_rm" # Remove all services from the local environment for Smart
 alias rmservice="~/.dotfiles/scripts/docker/service_rm" # Remove the selected service
 alias bemigrations="~/.dotfiles/scripts/docker/be_migrations" # Execute BE migrations
+alias startchatbot="~/.dotfiles/scripts/docker/start_chatbot" # Start the ChatBot
+alias stopchatbot="~/.dotfiles/scripts/docker/stop_chatbot" # Stop the ChatBot
 
 # Others
-alias gpt="~/.dotfiles/scripts/util/ChatGPT" # Talk to ChatGPT (needs arguments) *experimental*
+alias chat="~/.dotfiles/scripts/util/ChatBot" # Talk to ChatBot (needs arguments) *llama2*
 alias trs="~/.dotfiles/scripts/util/translate" # Translates a text from Spanish to English and copies it to the clipboard (needs arguments)
 alias tmp="~/.dotfiles/scripts/util/temp_linux" # Show the computer's sensor temperatures
 alias update_system="~/.dotfiles/scripts/util/update_upgrade" # Update the system

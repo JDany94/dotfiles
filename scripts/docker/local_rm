@@ -2,4 +2,6 @@
 
 docker stack rm cloud-auth-server_service cloud-databases_service cloud-jobs_service cloud-migrations_service cloud-rabbitmq1_service cloud-smarted_service cloud-lti_service && 
 docker stop smartContent-apache &&
-docker stop moodle
+docker stop moodle &&
+docker stop chatollama2_ollama_1 &&
+docker stop chatollama2_chatgpt_1
