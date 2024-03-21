@@ -5,49 +5,21 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#0077c2",
-          "foreground": "#ffffff",
-          "leading_diamond": "\u256d\u2500\ue0b6",
+          "foreground": "#f0ff50",
+          "properties": {
+            "style": "folder"
+          },
           "style": "diamond",
-          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}}",
-          "type": "os"
-        },
-        {
-          "background": "#f5f3a2",
-          "foreground": "#ff0400",
-          "powerline_symbol": "\ue0b4",
-          "properties": {
-            "root_icon": " \uf292"
-          },
-          "style": "powerline",
-          "template": " \ue23a ",
-          "type": "root"
-        },
-        {
-          "background": "#87d9ff",
-          "foreground": "#100e23",
-          "powerline_symbol": "\ue0b4",
-          "properties": {
-            "folder_icon": "\uf115",
-            "folder_separator_icon": " » ",
-            "home_icon": "\ueb06"
-          },
-          "style": "powerline",
-          "template": " {{ .Path }}",
+          "template": " \uf07b {{ .Path }}",
           "type": "path"
         },
         {
-          "background": "#ffffff",
-          "foreground": "#011627",
-          "powerline_symbol": "\ue0b4",
+          "foreground": "#35ccee",
           "properties": {
-            "branch_icon": "\ue725 ",
-            "fetch_stash_count": true,
-            "fetch_status": true,
-            "fetch_upstream_icon": true
+            "branch_icon": ""
           },
-          "style": "powerline",
-          "template": " \uf113 {{ .HEAD }} {{ if .Working.Changed }}{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} -{{ end }}{{ if .Staging.Changed }}<#ef5350> \uf046 {{ .Staging.String }}</>{{ end }}",
+          "style": "diamond",
+          "template": " \ue725 {{ .HEAD }}",
           "type": "git"
         }
       ],
@@ -58,22 +30,10 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#0077c2",
+          "foreground": "#f1184c",
           "style": "plain",
-          "template": "\u2570\u2500",
+          "template": " \u279c ",
           "type": "text"
-        },
-        {
-          "foreground": "#ffffff",
-          "foreground_templates": [
-            "{{ if gt .Code 0 }}#ef5350{{ end }}"
-          ],
-          "properties": {
-            "always_enabled": true
-          },
-          "style": "plain",
-          "template": "\u276f ",
-          "type": "status"
         }
       ],
       "type": "prompt"
